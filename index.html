@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Minhas Majeed Khan — Independent Scholar & Geopolitical Policy Analyst</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;color:#1a1a1a;background:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2.5rem;border-bottom:1px solid #e8e8e8;background:#fff;position:sticky;top:0;z-index:10}
+.nav-logo{font-size:13px;font-weight:600;color:#1a1a1a;font-family:Arial,sans-serif;letter-spacing:0.04em}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:12px;color:#666;text-decoration:none;font-family:Arial,sans-serif;letter-spacing:0.04em;text-transform:uppercase}
+.nav-links a:hover{color:#1a1a1a}
+.hero{padding:5rem 2.5rem 4.5rem;max-width:760px;margin:0 auto;border-bottom:1px solid #e8e8e8}
+.hero-rule{width:32px;height:2px;background:#1a1a1a;margin-bottom:2rem}
+.hero h1{font-size:30px;font-weight:500;color:#1a1a1a;line-height:1.25;margin-bottom:0.6rem}
+.hero-title{font-size:13px;font-family:Arial,sans-serif;color:#666;letter-spacing:0.06em;margin-bottom:2.5rem;line-height:1.8}
+.hero-quote{font-size:18px;font-style:italic;color:#1a1a1a;line-height:1.8;margin-bottom:2.5rem;padding:1.5rem 2rem;border:1px solid #e8e8e8;border-left:2px solid #1a1a1a}
+.hero-attr{font-size:12px;font-family:Arial,sans-serif;color:#666;letter-spacing:0.05em;margin-top:0.75rem}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:2rem}
+.btn-p{font-family:Arial,sans-serif;font-size:12px;padding:10px 22px;background:#1a1a1a;color:#fff;border:none;border-radius:6px;cursor:pointer;text-decoration:none;letter-spacing:0.04em}
+.btn-s{font-family:Arial,sans-serif;font-size:12px;padding:10px 22px;background:transparent;color:#1a1a1a;border:1px solid #1a1a1a;border-radius:6px;cursor:pointer;text-decoration:none;letter-spacing:0.04em}
+section{max-width:760px;margin:0 auto;padding:4rem 2.5rem;border-bottom:1px solid #e8e8e8}
+.sec-label{font-size:11px;font-family:Arial,sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#666;margin-bottom:2rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:#e8e8e8}
+.about-prose{font-size:15px;line-height:1.9;color:#444;margin-bottom:2.5rem}
+.about-prose p+p{margin-top:1rem}
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;border:1px solid #e8e8e8;border-radius:10px;overflow:hidden}
+.cred-cell{padding:1.25rem;background:#f9f9f7}
+.cred-inst{font-size:12px;font-family:Arial,sans-serif;color:#666;margin-bottom:4px;letter-spacing:0.03em}
+.cred-role{font-size:13px;color:#1a1a1a;font-family:Arial,sans-serif;font-weight:600;line-height:1.4}
+.book-card{display:flex;gap:2rem;align-items:flex-start;padding:2rem;border:1px solid #e8e8e8;border-radius:10px}
+.spine{width:56px;min-width:56px;height:96px;background:#26215C;border-radius:3px;display:flex;align-items:center;justify-content:center}
+.spine-text{font-size:8px;color:#EEEDFE;font-family:Georgia,serif;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;padding:6px 0;line-height:1.4;letter-spacing:0.05em}
+.book-title{font-size:17px;font-weight:500;color:#1a1a1a;font-style:italic;line-height:1.4;margin-bottom:0.5rem}
+.book-pub{font-size:12px;font-family:Arial,sans-serif;color:#666;margin-bottom:1rem;letter-spacing:0.03em}
+.book-desc{font-size:14px;color:#444;line-height:1.8;font-family:Arial,sans-serif}
+.kea-wrap{border:1px solid #e8e8e8;border-radius:10px;overflow:hidden}
+.kea-header{padding:1.75rem 2rem;background:#f9f9f7;border-bottom:1px solid #e8e8e8}
+.kea-name{font-size:18px;font-weight:500;color:#1a1a1a;margin-bottom:4px}
+.kea-sub{font-size:12px;font-family:Arial,sans-serif;color:#666;letter-spacing:0.05em}
+.kea-body{padding:1.75rem 2rem;font-size:14px;line-height:1.9;color:#444;font-family:Arial,sans-serif;border-bottom:1px solid #e8e8e8}
+.kea-dims{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e8e8e8}
+.dim{padding:1rem 1.25rem;background:#fff}
+.dim-n{font-size:10px;font-family:Arial,sans-serif;color:#666;margin-bottom:5px;letter-spacing:0.06em}
+.dim-label{font-size:13px;color:#1a1a1a;font-family:Arial,sans-serif;line-height:1.4}
+.writing-item{display:flex;align-items:baseline;gap:1.5rem;padding:1.25rem 0;border-bottom:1px solid #e8e8e8}
+.writing-item:last-child{border-bottom:none}
+.w-type{font-size:11px;font-family:Arial,sans-serif;color:#666;letter-spacing:0.07em;text-transform:uppercase;min-width:100px;flex-shrink:0}
+.w-title{font-size:14px;color:#1a1a1a;font-style:italic;line-height:1.5}
+.media-item{display:flex;align-items:center;gap:1.5rem;padding:1.25rem 0;border-bottom:1px solid #e8e8e8}
+.media-item:last-child{border-bottom:none}
+.media-icon{font-size:18px;color:#666;width:20px;text-align:center;flex-shrink:0}
+.media-name{font-size:14px;font-weight:600;color:#1a1a1a;font-family:Arial,sans-serif;margin-bottom:2px}
+.media-desc{font-size:13px;color:#666;font-family:Arial,sans-serif}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:1.5rem}
+.c-item{display:flex;align-items:center;gap:12px;padding:1rem 1.25rem;border:1px solid #e8e8e8;border-radius:8px}
+.c-item i{font-size:16px;color:#666}
+.c-label{font-size:11px;font-family:Arial,sans-serif;color:#666;letter-spacing:0.04em;margin-bottom:2px}
+.c-val{font-size:13px;color:#1a1a1a;font-family:Arial,sans-serif}
+footer{max-width:760px;margin:0 auto;padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-copy{font-size:12px;color:#666;font-family:Arial,sans-serif}
+.foot-links{display:flex;gap:1.5rem}
+.foot-links a{font-size:12px;color:#666;text-decoration:none;font-family:Arial,sans-serif}
+@media(max-width:600px){
+  nav{padding:1rem 1.25rem}.nav-links{gap:1rem}
+  .hero{padding:3rem 1.25rem 2.5rem}
+  section{padding:2.5rem 1.25rem}
+  .book-card{flex-direction:column;gap:1.25rem}
+  .kea-dims{grid-template-columns:repeat(2,1fr)}
+  .writing-item{flex-direction:column;gap:6px}
+  footer{padding:1.5rem 1.25rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Dr. Minhas Majeed Khan</span>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#research">Research</a>
+    <a href="#writing">Writing</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-rule"></div>
+  <h1>Dr. Minhas Majeed Khan</h1>
+  <div class="hero-title">Independent Scholar &nbsp;·&nbsp; Author &nbsp;·&nbsp; Geopolitical Policy Analyst<br>Pakistan · International Relations · Global South · Religion &amp; Security</div>
+  <div class="hero-quote">
+    "Wars are not lost on the battlefield. They are lost when a civilisation can no longer justify the cost of winning."
+    <div class="hero-attr">— Dr. Minhas Majeed Khan · Khan's Exhaustion Asymmetry (KEA), 2026</div>
+  </div>
+  <div class="hero-cta">
+    <a class="btn-p" href="#writing">Read my work</a>
+    <a class="btn-s" href="#contact">Get in touch</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="sec-label">About</div>
+  <div class="about-prose">
+    <p>Dr. Minhas Majeed Khan is an independent scholar, author, and geopolitical policy analyst specialising in international relations theory, Pakistan's foreign policy, and the geopolitics of the Global South. Her scholarship is grounded in the conviction that power without moral authority is neither durable nor legitimate — a principle that runs through her academic writing, public commentary, and original theoretical work.</p>
+    <p>She holds a doctorate from the University of Peshawar and has held postdoctoral fellowships at the Institute of Strategic Studies Islamabad (ISSI) and the Institute for Global Engagement (IGE) in Washington D.C. Her public analysis appears across BBC, Voice of America, and leading Pakistani media. She serves on the IGE Advisory Council and has contributed to journals including <em>Strategic Studies</em> (ISSI) and <em>Peshawar Islamicus</em>.</p>
+    <p>Her intellectual formation draws on Islamic moral tradition, classical realist theory, and a civilisational perspective that consistently situates Pakistan within the broader currents of Global South geopolitics.</p>
+  </div>
+  <div class="cred-grid">
+    <div class="cred-cell">
+      <div class="cred-inst">PhD · University of Peshawar</div>
+      <div class="cred-role">International Relations</div>
+    </div>
+    <div class="cred-cell">
+      <div class="cred-inst">Postdoctoral Fellowship · ISSI</div>
+      <div class="cred-role">Institute of Strategic Studies, Islamabad</div>
+    </div>
+    <div class="cred-cell">
+      <div class="cred-inst">Postdoctoral Fellowship · IGE</div>
+      <div class="cred-role">Institute for Global Engagement, Washington D.C.</div>
+    </div>
+    <div class="cred-cell">
+      <div class="cred-inst">Advisory Council · IGE</div>
+      <div class="cred-role">Institute for Global Engagement</div>
+    </div>
+  </div>
+</section>
+
+<section id="books">
+  <div class="sec-label">Books</div>
+  <div class="book-card">
+    <div class="spine"><div class="spine-text">Divine Diplomacy</div></div>
+    <div>
+      <div class="book-title">Divine Diplomacy: Post-9/11 Evangelical Influence on Pakistan–US Relations</div>
+      <div class="book-pub">Palgrave Macmillan &nbsp;·&nbsp; 2025</div>
+      <div class="book-desc">A rigorous examination of how evangelical religious networks shaped the strategic relationship between Pakistan and the United States in the two decades following 9/11. The study brings the religion-security nexus to the centre of foreign policy analysis, challenging realist accounts that marginalise the role of faith-based actors in interstate diplomacy.</div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="sec-label">Original Theory</div>
+  <div class="kea-wrap">
+    <div class="kea-header">
+      <div class="kea-name">Khan's Exhaustion Asymmetry</div>
+      <div class="kea-sub">KEA &nbsp;·&nbsp; An original geopolitical framework &nbsp;·&nbsp; 2026</div>
+    </div>
+    <div class="kea-body">
+      Khan's Exhaustion Asymmetry (KEA) proposes that the outcome of asymmetric conflict is determined not by military superiority but by the differential rate at which each belligerent's civilisational condition deteriorates across four measurable dimensions. The actor whose condition erodes faster reaches a threshold of unsustainability — what KEA terms the exhaustion point — first. When both belligerents exhaust simultaneously, structural conditions emerge for a third actor to assume the mediating role. KEA extends and challenges Robert Pape's Escalation Trap, arguing that exhaustion is not a byproduct of escalation but a prior structural condition that predicts and shapes it.
+    </div>
+    <div class="kea-dims">
+      <div class="dim"><div class="dim-n">Dimension I</div><div class="dim-label">Public will</div></div>
+      <div class="dim"><div class="dim-n">Dimension II</div><div class="dim-label">Institutional credibility</div></div>
+      <div class="dim"><div class="dim-n">Dimension III</div><div class="dim-label">Economic tolerance</div></div>
+      <div class="dim"><div class="dim-n">Dimension IV</div><div class="dim-label">Moral authority</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="sec-label">Writing &amp; Commentary</div>
+  <div class="writing-item">
+    <span class="w-type">Op-Ed</span>
+    <span class="w-title">The Indispensable State: Pakistan's Mediation and the Remaking of U.S. Foreign Policy</span>
+  </div>
+  <div class="writing-item">
+    <span class="w-type">Academic Article</span>
+    <span class="w-title">Beyond the Escalation Trap — Khan's Exhaustion Asymmetry as a Theoretical Proposition</span>
+  </div>
+  <div class="writing-item">
+    <span class="w-type">Newsletter</span>
+    <span class="w-title">The Global Dispatch — Geopolitical analysis for a serious reader</span>
+  </div>
+</section>
+
+<section id="media">
+  <div class="sec-label">Media &amp; Public Engagement</div>
+  <div class="media-item">
+    <i class="ti ti-microphone media-icon" aria-hidden="true"></i>
+    <div>
+      <div class="media-name">Crossing Faiths Podcast</div>
+      <div class="media-desc">Guest analyst on religion, diplomacy, and Pakistan–US relations</div>
+    </div>
+  </div>
+  <div class="media-item">
+    <i class="ti ti-brand-youtube media-icon" aria-hidden="true"></i>
+    <div>
+      <div class="media-name">YouTube Channel</div>
+      <div class="media-desc">Video commentary on international affairs, geopolitics, and KEA</div>
+    </div>
+  </div>
+  <div class="media-item">
+    <i class="ti ti-broadcast media-icon" aria-hidden="true"></i>
+    <div>
+      <div class="media-name">BBC &amp; Voice of America</div>
+      <div class="media-desc">Expert commentary on Pakistan, US foreign policy, and regional security</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sec-label">Contact</div>
+  <p style="font-size:14px;color:#666;font-family:Arial,sans-serif;line-height:1.8">For academic collaboration, media enquiries, speaking invitations, or scholarly correspondence.</p>
+  <div class="contact-grid">
+    <div class="c-item">
+      <i class="ti ti-mail" aria-hidden="true"></i>
+      <div><div class="c-label">Email</div><div class="c-val">minhasmaj@gmail.com</div></div>
+    </div>
+    <div class="c-item">
+      <i class="ti ti-world" aria-hidden="true"></i>
+      <div><div class="c-label">Website</div><div class="c-val">www.minhasmaj.pk</div></div>
+    </div>
+    <div class="c-item">
+      <i class="ti ti-brand-x" aria-hidden="true"></i>
+      <div><div class="c-label">X (Twitter)</div><div class="c-val">@MinmajMarwat</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="foot-copy">© 2026 Dr. Minhas Majeed Khan &nbsp;·&nbsp; Peshawar, Pakistan</span>
+  <div class="foot-links">A
+    <a href="https://x.com/MinmajMarwat" target="_blank">X</a>
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">YouTube</a>
+  </div>
+</footer>
+
+</body>
+</html>
